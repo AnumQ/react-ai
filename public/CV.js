@@ -1,10 +1,10 @@
 import "./App.css";
 
-function App() {
-  console.log("coming here");
+const CV = () => {
   return (
     <div className="App">
       <div className="App-header">
+        <h1>title</h1>
         <p>Also</p>
         <p>Also</p>
         <p>Also</p>
@@ -13,6 +13,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default CV;

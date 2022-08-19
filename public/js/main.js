@@ -1,5 +1,4 @@
 /* ===================================================================
- * Tyndale 1.0.0 - Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -8,6 +7,14 @@
 
   /* animations
    * -------------------------------------------------- */
+
+  const pathName =  window.location.pathname;
+
+  if (pathName === "/cv") {
+    document.getElementById("mainSite").innerHTML = "";
+    return;
+  }
+
   const tl = anime
     .timeline({
       easing: "easeInOutCubic",

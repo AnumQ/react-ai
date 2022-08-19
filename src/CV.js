@@ -1,6 +1,20 @@
 import "./CV.css";
-
 const CV = () => {
+  const getData = async () => {
+    try {
+      const res = await fetch("cv.json");
+      if (res.status === 200) {
+        const ss = await res.json();
+        console.log(ss);
+      }
+    } catch (e) {
+      console.error("Error fetching cv.json", e);
+    }
+
+    return console.log(333);
+  };
+
+  getData();
   return (
     <div className="App">
       <div className="sidebar">
@@ -126,7 +140,65 @@ const CV = () => {
         </div>
         <Spacer height="10" />
         <div className="clientName">Imal (e-Learning)</div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Web app to assist pupils in reading and writing. Developed in React
+          with Firebase Authentication and Firebase Backend. Hosted on Azure.{" "}
+          <br />• Helped Client move over to a cheaper hosting and a simpler
+          setup for their business needs.
+        </div>
+        <Spacer height="10" />
+        <div className="clientName">Onecall (Telecommunications)</div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Developed the official app using Swift and Kotlin.
+        </div>
+        <Spacer height="10" />
+        <div className="clientName">Storebrand (Insurance services)</div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Mobile app development of MyPension in React-Native.
+        </div>
+        <Spacer height="10" />
+        <div className="clientName">Nets Group (Nordic payments ecosystem)</div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Developed One-Time Passcode in <b>Swift</b>. Added support for
+          <b>Accessibility</b> and <b>VoiceOver</b> with dynamic views. Exported
+          SDK/lib from Objective-C projects to reuse in the Swift app as
+          Framework. Improved UI/UX Design and mentored junior on the team.
+        </div>
+        <Spacer height="10" />
+        <div className="clientName">
+          Norgesgruppen Data (Groceries wholesale)
+        </div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Upgrade several apps from 32-bit to 64-bit architecture, optimize
+          release processes with continuous integration.
+        </div>
+        <Spacer height="10" />
+        <div className="clientName">NRK (Government-owned public TV)</div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Apple tvOS development in Swift 3. REST-API integration for
+          favourites feature. Integrated Crashlytics.
+        </div>
+        <Spacer height="10" />
 
+        <Spacer height="12" />
+        <div className="sectionTitle">Consultant, BEKK, Oslo</div>
+        <Spacer height="8" />
+        <div className="employmentDates">AUGUST 2013 — AUGUST 2016</div>
+        <Spacer height="10" />
+        <div className="clientName">
+          Avinor (Operating all airports in Norway)
+        </div>
+        <Spacer height="8" />
+        <div className="clinetSectionText">
+          • Development applications in C#/.NET. Built and released an internal
+          app in Xamarin.
+        </div>
         <Spacer height="10" />
       </div>
       {/* <header className="App-header">

@@ -8,13 +8,7 @@
   /* animations
    * -------------------------------------------------- */
 
-  const pathName =  window.location.pathname;
-
-  if (pathName === "/cv") {
-    document.getElementById("mainSite").innerHTML = "";
-    return;
-  }
-
+  console.log("Main. js called");
   const tl = anime
     .timeline({
       easing: "easeInOutCubic",

@@ -3236,6 +3236,7 @@ img.u-pull-left {
     letter-spacing : normal;
     text-align     : center;
     margin         : 0;
+    margin-top     : 100px;
     padding-bottom : calc(10 * var(--space));
     position       : relative;
 }

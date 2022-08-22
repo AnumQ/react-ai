@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const App = () => {
   useEffect(() => {
     const body = document.getElementsByTagName("body");
-
+    if (body.length === 0) return;
     var loadScript = function (src, type) {
       var tag = document.createElement("script");
       tag.async = false;
@@ -17,7 +17,6 @@ const App = () => {
       }
     };
 
-    if (body.length === 0) return;
     const scripts = body[0].getElementsByTagName("script");
     if (scripts.length === 0) {
       loadScript("js/plugins.js", "text/javascript");
@@ -134,7 +133,7 @@ const App = () => {
                     <span> Developer.</span>
                   </h1>
                   <a
-                    href="#works"
+                    href="#contact"
                     className="s-intro__scroll-down smoothscroll"
                   >
                     <span>Scroll Down</span>
